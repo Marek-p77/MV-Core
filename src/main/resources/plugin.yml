@@ -1,0 +1,16 @@
+name: MV-Core
+version: '${project.version}'
+main: me.marek_p.mvcore.Main
+api-version: 1.16
+authors: [ Marek_p ]
+description: Minecraft Plugin for Core Functions on Mineverse RPG Server
+website: https://galaxycode.eu
+commands:
+  god:
+  gmc:
+  gmsp:
+  gma:
+  gms:
+  fly:
+  spawn:
+  setspawn:
