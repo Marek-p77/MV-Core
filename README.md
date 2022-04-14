@@ -2,9 +2,9 @@
 
 ### 📄 Popis
 
-#### Minecraft Plugin for Core Functions on Mineverse RPG Server
+#### Minecraft Plugin pro server Mineverse RPG
 
-#### Version: 1.0 by Marek_p
+#### Verze: 1.0 by Marek_p
 
 ### ⚙️Příkazy
                     
