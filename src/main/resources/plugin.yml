@@ -14,3 +14,6 @@ commands:
   fly:
   spawn:
   setspawn:
+  rtp:
+  tp:
+  tpall:
