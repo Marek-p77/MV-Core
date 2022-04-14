@@ -9,6 +9,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Objects;
+
 public class SpawnCommand implements CommandExecutor {
 
     private final Main plugin;
@@ -28,10 +30,10 @@ public class SpawnCommand implements CommandExecutor {
             if (location != null){
 
                 player.teleport(location);
-                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "You have been teleported to the Spawn");
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("spawn-message"))));
 
             }else{
-                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Spawn does not exist! Use " + ChatColor.DARK_RED + "/setspawn" + ChatColor.RED + " to set the Spawn first.");
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("no-spawn-message"))));
             }
         }
         return true;

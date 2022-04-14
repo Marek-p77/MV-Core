@@ -9,6 +9,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Objects;
+
 public class SetSpawnCommand implements CommandExecutor {
 
     private final Main plugin;
@@ -29,7 +31,9 @@ public class SetSpawnCommand implements CommandExecutor {
                 plugin.getConfig().set("spawn", location);
                 plugin.saveConfig();
 
-                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Spawn location has been set!");
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("set-spawn-message"))));
+            } else {
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("no-set-spawn-perms"))));
             }
         }
         return true;

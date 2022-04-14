@@ -1,8 +1,12 @@
 disable-message: "&8[&bMineverse&8] &8Fly has been &cDISABLED"
 enable-message: "&8[&bMineverse&8] &8Fly has been &aENABLED"
-no-perm-fly: "&8[&bMineverse&8] &cYou need permission mvcore.fly to execute this command"
-join-message-prefix: '&8[&a+&8] &r'
-join-message: ' &bhas joined the server'
-leave-message-prefix: '&8[&c-&8] &r'
-leave-message: ' &bhas left the server'
+no-perm-fly: "&8[&bMineverse&8] &cYou need permission &4mvcore.fly &cto execute this command"
+join-message-prefix: "&8[&a+&8] &r"
+join-message: " &bhas joined the server"
+leave-message-prefix: "&8[&c-&8] &r"
+leave-message: " &bhas left the server"
+spawn-message: "&8[&bMineverse&8] &7You have been teleported to the Spawn"
+set-spawn-message: "&8[&bMineverse&8] &7New Spawn location has been set"
+no-spawn-message: "&8[&bMineverse&8] &cSpawn not found! Use command &4/setspawn &cto set the Spawn"
+no-set-spawn-perms: "&8[&bMineverse&8] &cYou need permission &4mvcore.setspawn &cto execute this command"
 spawn-location:
