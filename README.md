@@ -19,3 +19,6 @@ Jméno  | Permise
 /god | mvcore.god
 /spawn | x
 /setspawn | mvcore.setspawn
+/tp | mvcore.tp & mvcore.tpothers
+/tpall | mvcore.tpall
+/rtp | mvcore.rtp
