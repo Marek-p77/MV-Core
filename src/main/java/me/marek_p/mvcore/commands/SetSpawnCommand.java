@@ -23,12 +23,14 @@ public class SetSpawnCommand implements CommandExecutor {
         if (sender instanceof Player){
             Player player = (Player) sender;
 
-            Location location = player.getLocation();
+            if (player.hasPermission("mvcore.setspawn")) {
+                Location location = player.getLocation();
 
-            plugin.getConfig().set("spawn", location);
-            plugin.saveConfig();
+                plugin.getConfig().set("spawn", location);
+                plugin.saveConfig();
 
-            player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Spawn location has been set!");
+                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Spawn location has been set!");
+            }
         }
         return true;
     }

@@ -31,7 +31,7 @@ public final class Main extends JavaPlugin {
         System.out.println("[MV-Core] --------------------------");
         System.out.println("[MV-Core] |                        |");
         System.out.println("[MV-Core] |   Author: Marek_p      |");
-        System.out.println("[MV-Core] |   Version: v1.0 Beta   |");
+        System.out.println("[MV-Core] |   Version: v1.0        |");
         System.out.println("[MV-Core] |                        |");
         System.out.println("[MV-Core] --------------------------");
     }
