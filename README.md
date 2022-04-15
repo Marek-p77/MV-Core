@@ -22,3 +22,4 @@ Jméno  | Permise
 /tp | mvcore.tp & mvcore.tpothers
 /tpall | mvcore.tpall
 /rtp | mvcore.rtp
+/admin | mvcore.admingui
