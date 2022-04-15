@@ -25,3 +25,6 @@ Jméno  | Permise
 /tpall | mvcore.tpall
 /rtp | mvcore.rtp
 /admin | mvcore.admingui
+/heal | mvcore.heal
+/feed | mvcore.feed
+/list | x
