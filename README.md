@@ -6,6 +6,8 @@
 
 #### Verze: 1.0 by Marek_p
 
+### Minecraft Verze: 1.16.5
+
 ### ⚙️Příkazy
                     
 Jméno  | Permise
@@ -22,3 +24,4 @@ Jméno  | Permise
 /tp | mvcore.tp & mvcore.tpothers
 /tpall | mvcore.tpall
 /rtp | mvcore.rtp
+/admin | mvcore.admingui
