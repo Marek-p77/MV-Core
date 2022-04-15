@@ -1,6 +1,7 @@
 package me.marek_p.mvcore;
 
 import me.marek_p.mvcore.commands.*;
+import me.marek_p.mvcore.events.AdminGUIEvents;
 import me.marek_p.mvcore.events.JoinLeaveListener;
 import me.marek_p.mvcore.events.SpawnListener;
 import me.marek_p.mvcore.utils.TeleportUtils;
@@ -24,9 +25,11 @@ public final class Main extends JavaPlugin {
         Objects.requireNonNull(getCommand("rtp")).setExecutor(new RandomTPCommand());
         Objects.requireNonNull(getCommand("tp")).setExecutor(new TeleportCommand());
         Objects.requireNonNull(getCommand("tpall")).setExecutor(new TeleportAllCommand());
+        Objects.requireNonNull(getCommand("admin")).setExecutor(new AdminGUI());
 
         getServer().getPluginManager().registerEvents(new JoinLeaveListener(this), this);
         getServer().getPluginManager().registerEvents(new SpawnListener(this), this);
+        getServer().getPluginManager().registerEvents(new AdminGUIEvents(this), this);
 
         TeleportUtils utils = new TeleportUtils(this);
 

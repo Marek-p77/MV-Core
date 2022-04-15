@@ -32,7 +32,7 @@ public class SpawnCommand implements CommandExecutor {
                 player.teleport(location);
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("spawn-message"))));
 
-            }else{
+            } else {
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("no-spawn-message"))));
             }
         }
