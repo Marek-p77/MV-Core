@@ -12,10 +12,11 @@
                     
 Jméno  | Permise
 ------------- | -------------
-/gmc  | mvcore.gamemode
-/gms  | mvcore.gamemode
-/gma  | mvcore.gamemode
-/gmsp  | mvcore.gamemode
+/gmc  | mvcore.gmc
+/gms  | mvcore.gms
+/gma  | mvcore.gma
+/gmsp  | mvcore.gmsp
+/gm... [hráč] | mvcore.gmothers
 /fly  | mvcore.fly
 /fly [hráč] | mvcore.flyothers
 /god | mvcore.god
