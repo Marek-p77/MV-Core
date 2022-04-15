@@ -26,6 +26,9 @@ public final class Main extends JavaPlugin {
         Objects.requireNonNull(getCommand("tp")).setExecutor(new TeleportCommand());
         Objects.requireNonNull(getCommand("tpall")).setExecutor(new TeleportAllCommand());
         Objects.requireNonNull(getCommand("admin")).setExecutor(new AdminGUI());
+        Objects.requireNonNull(getCommand("list")).setExecutor(new ListCommand());
+        Objects.requireNonNull(getCommand("heal")).setExecutor(new HealCommand());
+        Objects.requireNonNull(getCommand("feed")).setExecutor(new FeedCommand());
 
         getServer().getPluginManager().registerEvents(new JoinLeaveListener(this), this);
         getServer().getPluginManager().registerEvents(new SpawnListener(this), this);
