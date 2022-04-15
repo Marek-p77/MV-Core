@@ -17,7 +17,7 @@ public class ListCommand implements CommandExecutor {
         if (sender instanceof Player) {
 
             Player player = (Player) sender;
-            player.sendMessage(ChatColor.AQUA + "Na serveru hraje " + ChatColor.GREEN + getServer().getOnlinePlayers().size() + "/" + getServer().getMaxPlayers() + " hráčů");
+            player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Na serveru hraje " + ChatColor.GREEN + getServer().getOnlinePlayers().size() + "/" + getServer().getMaxPlayers() + ChatColor.GRAY + " hráčů");
         }
         return true;
     }

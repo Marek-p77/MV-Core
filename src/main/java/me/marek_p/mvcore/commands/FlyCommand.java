@@ -51,33 +51,38 @@ public class FlyCommand implements CommandExecutor {
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("no-perm-fly"))));
 
                 }
-
             } else if (args.length == 1) {
 
                 Player target = Bukkit.getPlayer(args[0]);
+                assert target != null;
 
                 if (player.hasPermission("mvcore.flyothers")) {
 
-                    if (flying_players.contains(target)) {
+                    try {
 
-                        flying_players.remove(target);
-                        assert target != null;
-                        target.setAllowFlight(false);
-                        target.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("disable-message"))));
+                        if (flying_players.contains(target)) {
 
-                    } else if (!flying_players.contains(target)) {
+                            flying_players.remove(target);
 
-                        flying_players.add(target);
-                        assert target != null;
-                        target.setAllowFlight(true);
-                        target.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("enable-message"))));
+                            target.setAllowFlight(false);
+                            target.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Fly has been " + ChatColor.RED + "DISABLED" + ChatColor.GRAY + " by " + ChatColor.GREEN + "" + player.getName());
+                            player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Fly for Player " + ChatColor.GREEN + "" + target.getName() + ChatColor.GRAY + " has been " + ChatColor.RED + "DISABLED");
 
+                        } else if (!flying_players.contains(target)) {
+
+                            flying_players.add(target);
+
+                            target.setAllowFlight(true);
+                            target.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Fly has been " + ChatColor.GREEN + "ENABLED" + ChatColor.GRAY + " by " + ChatColor.GREEN + "" + player.getName());
+                            player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Fly for Player " + ChatColor.GREEN + "" + target.getName() + ChatColor.GRAY + " has been " + ChatColor.GREEN + "ENABLED");
+
+                        }
+
+                    } catch (NullPointerException exception) {
+                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Player not found!");
                     }
-
                 } else {
-
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(plugin.getConfig().getString("no-perm-others"))));
-
                 }
             }
         }

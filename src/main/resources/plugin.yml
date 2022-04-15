@@ -21,3 +21,4 @@ commands:
   list:
   heal:
   feed:
+  whois:
