@@ -4,18 +4,21 @@
 
 #### Minecraft Plugin pro server Mineverse RPG
 
-#### Verze: 1.0 by Marek_p
+#### Verze: 1.0
 
-### Minecraft Verze: 1.16.5
+#### Autor: Marek_p
+
+#### Minecraft Verze: 1.16.5
 
 ### ⚙️Příkazy
                     
 Jméno  | Permise
 ------------- | -------------
-/gmc  | mvcore.gamemode
-/gms  | mvcore.gamemode
-/gma  | mvcore.gamemode
-/gmsp  | mvcore.gamemode
+/gmc  | mvcore.gmc
+/gms  | mvcore.gms
+/gma  | mvcore.gma
+/gmsp  | mvcore.gmsp
+/gm... [hráč] | mvcore.gmothers
 /fly  | mvcore.fly
 /fly [hráč] | mvcore.flyothers
 /god | mvcore.god
