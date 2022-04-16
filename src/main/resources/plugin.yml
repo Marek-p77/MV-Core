@@ -22,3 +22,5 @@ commands:
   heal:
   feed:
   whois:
+  nv:
+  haste:

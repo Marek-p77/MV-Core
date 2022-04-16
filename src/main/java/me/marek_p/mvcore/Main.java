@@ -30,6 +30,8 @@ public final class Main extends JavaPlugin {
         Objects.requireNonNull(getCommand("heal")).setExecutor(new HealCommand());
         Objects.requireNonNull(getCommand("feed")).setExecutor(new FeedCommand());
         Objects.requireNonNull(getCommand("whois")).setExecutor(new WhoisCommand());
+        Objects.requireNonNull(getCommand("nv")).setExecutor(new NightVisionCommand());
+        Objects.requireNonNull(getCommand("haste")).setExecutor(new HasteCommand());
 
         getServer().getPluginManager().registerEvents(new JoinLeaveListener(this), this);
         getServer().getPluginManager().registerEvents(new SpawnListener(this), this);
