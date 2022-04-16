@@ -32,6 +32,8 @@ public final class Main extends JavaPlugin {
         Objects.requireNonNull(getCommand("whois")).setExecutor(new WhoisCommand());
         Objects.requireNonNull(getCommand("nv")).setExecutor(new NightVisionCommand());
         Objects.requireNonNull(getCommand("haste")).setExecutor(new HasteCommand());
+        Objects.requireNonNull(getCommand("day")).setExecutor(new DayNightCommands());
+        Objects.requireNonNull(getCommand("night")).setExecutor(new DayNightCommands());
 
         getServer().getPluginManager().registerEvents(new JoinLeaveListener(this), this);
         getServer().getPluginManager().registerEvents(new SpawnListener(this), this);

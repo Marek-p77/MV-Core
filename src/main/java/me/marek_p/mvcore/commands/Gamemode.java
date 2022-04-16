@@ -98,6 +98,8 @@ public class Gamemode implements CommandExecutor {
                             player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "GameMode for Player " + ChatColor.GREEN + "" + target.getName() + ChatColor.GRAY + " has been set to " + ChatColor.GREEN + "ADVENTURE");
 
                         }
+                    } else {
+                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.gmothers" + ChatColor.RED + " to execute this command!");
                     }
 
                 } catch (NullPointerException exception) {

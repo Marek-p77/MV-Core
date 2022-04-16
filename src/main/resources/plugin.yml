@@ -24,3 +24,5 @@ commands:
   whois:
   nv:
   haste:
+  day:
+  night:
