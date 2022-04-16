@@ -22,6 +22,7 @@ Jméno  | Permise
 /fly  | mvcore.fly
 /fly [hráč] | mvcore.flyothers
 /god | mvcore.god
+/god [hráč] | mvcore.godothers
 /spawn | x
 /setspawn | mvcore.setspawn
 /tp | mvcore.tp & mvcore.tpothers
@@ -29,5 +30,11 @@ Jméno  | Permise
 /rtp | mvcore.rtp
 /admin | mvcore.admingui
 /heal | mvcore.heal
+/heal [hráč] | mvcore.healothers
 /feed | mvcore.feed
+/feed [hráč] | mvcore.feedothers
 /list | x
+/nv | mvcore.nightvision
+/nv [hráč] | mvcore.nightvisionothers
+/haste | mvcore.haste
+/haste [hráč] | mvcore.hasteothers
