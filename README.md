@@ -4,9 +4,11 @@
 
 #### Minecraft Plugin pro server Mineverse RPG
 
-#### Verze: 1.0 by Marek_p
+#### Verze: 1.0
 
-### Minecraft Verze: 1.16.5
+#### Autor: Marek_p
+
+#### Minecraft Verze: 1.16.5
 
 ### ⚙️Příkazy
                     
