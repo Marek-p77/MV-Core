@@ -38,3 +38,5 @@ Jméno  | Permise
 /nv [hráč] | mvcore.nightvisionothers
 /haste | mvcore.haste
 /haste [hráč] | mvcore.hasteothers
+/day | mvcore.day
+/night | mvcore.night
