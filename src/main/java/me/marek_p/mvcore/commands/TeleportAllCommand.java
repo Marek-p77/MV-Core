@@ -23,7 +23,7 @@ public class TeleportAllCommand implements CommandExecutor {
                     p.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "You have been teleported to " + ChatColor.GREEN + player.getName());
                 }
             } else {
-                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.tpall" + ChatColor.RED + " to execute this command!");
+                player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.tpall" + ChatColor.RED + " to execute this command!");
             }
         }
         return false;

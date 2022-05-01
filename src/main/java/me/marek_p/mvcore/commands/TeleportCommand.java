@@ -29,6 +29,7 @@ public class TeleportCommand implements CommandExecutor {
 
                     try {
 
+                        assert target != null;
                         player.teleport(target.getLocation());
                         player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "You have been teleported to " + ChatColor.GREEN + target.getName());
 
@@ -38,7 +39,7 @@ public class TeleportCommand implements CommandExecutor {
 
                     }
                 } else {
-                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.tp" + ChatColor.RED + " to execute this command!");
+                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.tp" + ChatColor.RED + " to execute this command!");
                 }
             } else if (args.length == 2) {
 
@@ -49,6 +50,8 @@ public class TeleportCommand implements CommandExecutor {
 
                     try {
 
+                        assert player1 != null;
+                        assert player2 != null;
                         player1.teleport(player2.getLocation());
 
                         player1.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "You have been teleported to " + ChatColor.GREEN + player2.getName());
@@ -60,7 +63,7 @@ public class TeleportCommand implements CommandExecutor {
 
                     }
                 } else {
-                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.tpothers" + ChatColor.RED + " to execute this command!");
+                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.tpothers" + ChatColor.RED + " to execute this command!");
                 }
             }
         }

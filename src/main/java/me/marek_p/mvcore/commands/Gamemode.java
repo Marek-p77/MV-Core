@@ -50,7 +50,7 @@ public class Gamemode implements CommandExecutor {
                         player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Your gamemode has been set to " + ChatColor.GREEN + "SPECTATOR");
 
                     } else {
-                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.gmsp" + ChatColor.RED + " to execute this command!");
+                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.gmsp" + ChatColor.RED + " to execute this command!");
                     }
 
                 } else if (command.getName().equalsIgnoreCase("gma")) {
@@ -61,7 +61,7 @@ public class Gamemode implements CommandExecutor {
                         player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Your gamemode has been set to " + ChatColor.GREEN + "ADVENTURE");
 
                     } else {
-                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.gma" + ChatColor.RED + " to execute this command!");
+                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.gma" + ChatColor.RED + " to execute this command!");
                     }
                 }
             } else if (args.length == 1) {
@@ -99,13 +99,12 @@ public class Gamemode implements CommandExecutor {
 
                         }
                     } else {
-                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.gmothers" + ChatColor.RED + " to execute this command!");
+                        player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.gmothers" + ChatColor.RED + " to execute this command!");
                     }
 
                 } catch (NullPointerException exception) {
                     player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Player not found!");
                 }
-
             }
         }
         return true;

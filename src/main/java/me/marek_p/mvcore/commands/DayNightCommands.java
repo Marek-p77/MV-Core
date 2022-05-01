@@ -1,6 +1,5 @@
 package me.marek_p.mvcore.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -25,7 +24,7 @@ public class DayNightCommands implements CommandExecutor {
                     player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Time has been set to " + ChatColor.GREEN + "DAY");
 
                 } else {
-                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.day" + ChatColor.RED + " to execute this command!");
+                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.day" + ChatColor.RED + " to execute this command!");
                 }
 
             } else if (command.getName().equalsIgnoreCase("night")) {
@@ -36,13 +35,10 @@ public class DayNightCommands implements CommandExecutor {
                     player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.GRAY + "Time has been set to " + ChatColor.GREEN + "NIGHT");
 
                 } else {
-                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "Youd need permission " + ChatColor.DARK_RED + "mvcore.night" + ChatColor.RED + " to execute this command!");
+                    player.sendMessage(ChatColor.DARK_GRAY + "[" + ChatColor.AQUA + "Mineverse" + ChatColor.DARK_GRAY + "] " + ChatColor.RED + "You need permission " + ChatColor.DARK_RED + "mvcore.night" + ChatColor.RED + " to execute this command!");
                 }
-
             }
-
         }
-
         return true;
     }
 }

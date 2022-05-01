@@ -16,21 +16,29 @@ public class SpawnListener implements Listener {
     }
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent e){
+    public void onPlayerJoin(PlayerJoinEvent event) {
 
-        if(!e.getPlayer().hasPlayedBefore()){
+        if (!event.getPlayer().hasPlayedBefore()) {
+
             Location location = plugin.getConfig().getLocation("spawn");
-            if(location != null){
-                e.getPlayer().teleport(location);
+
+            if (location != null){
+
+                event.getPlayer().teleport(location);
+
             }
         }
     }
 
     @EventHandler
-    public void onPlayerDeath(PlayerRespawnEvent e){
+    public void onPlayerDeath(PlayerRespawnEvent event) {
+
         Location location = plugin.getConfig().getLocation("spawn");
-        if(location != null){
-            e.setRespawnLocation(location);
+
+        if (location != null){
+
+            event.setRespawnLocation(location);
+
         }
     }
 }
