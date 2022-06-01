@@ -40,3 +40,5 @@ Jméno  | Permise
 /haste [hráč] | mvcore.hasteothers
 /day | mvcore.day
 /night | mvcore.night
+
+Tento plugin je určen pro soukromý Minecraft server a nedoporučuji ho tedy používat pro větší projekty.
