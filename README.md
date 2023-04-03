@@ -2,17 +2,15 @@
 
 ### 📄 Popis
 
-#### Minecraft Plugin pro server Mineverse RPG
-
-#### Verze: 1.0
-
-#### Autor: Marek_p
+Minecraft Plugin pro server Mineverse RPG. Tohle je jeden z mých prvních minecraft pluginů, které jsem dělal. Tento plugin už nebude dále vyvíjen. Rozhodl jsem se ho zveřejnit výhradně pro vzdělávací účely a abych zde měl i nějaké veřejné projekty v Javě. Můžete si plugin stáhnout, upravovat a rozšiřovat podle sebe. Pokud vám to přijde správné, klidně ho vydávejte za svůj :)
 
 #### Minecraft Verze: 1.16.5
 
+Téměř vše by mělo v pořádku fungovat i na verzi 1.19.3
+
 ### ⚙️Příkazy
                     
-Jméno  | Permise
+Příkaz  | Permise
 ------------- | -------------
 /gmc  | mvcore.gmc
 /gms  | mvcore.gms
