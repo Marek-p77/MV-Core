@@ -2,7 +2,7 @@
 
 ### 📄 Popis
 
-Minecraft Plugin pro server Mineverse RPG. Tohle je jeden z mých prvních minecraft pluginů, které jsem dělal. Tento plugin už nebude dále vyvíjen. Rozhodl jsem se ho zveřejnit výhradně pro vzdělávací účely a abych zde měl i nějaké veřejné projekty v Javě. Můžete si plugin stáhnout, upravovat a rozšiřovat podle sebe. Pokud vám to přijde správné, klidně ho vydávejte za svůj :)
+Minecraft Plugin pro server Mineverse RPG. Tohle je jeden z mých prvních minecraft pluginů, které jsem dělal před dlouhou dobou. Tento plugin už nebude dále vyvíjen. Upozorňuji, že config není úplně nejlepší. Rozhodl jsem se ho zveřejnit výhradně pro vzdělávací účely a abych zde měl i nějaké veřejné projekty v Javě. Můžete si plugin stáhnout, upravovat a rozšiřovat podle sebe. Pokud vám to přijde správné, klidně ho vydávejte za svůj :)
 
 #### Minecraft Verze: 1.16.5
 
